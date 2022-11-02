@@ -25,7 +25,7 @@ jobs:
         TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
     
     - name: Deploy
-      uses: ZackKuptsow/github-pages-deploy-action@releases/v3
+      uses: ZackKuptsow/github-pages-deploy
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
