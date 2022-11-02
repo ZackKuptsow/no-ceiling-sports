@@ -4,7 +4,7 @@ const About = () => {
 			id="about_us"
 			className="py-16 px-4 sm:px-6 h-screen text-light bg-dark"
 		>
-			<div className="my-20 2xl:my-40 mx-auto md:px-36 2xl:px-72 text-lg md:text-xl 2xl:text-4xl">
+			<div className="my-20 2xl:my-40 mx-auto md:px-36 2xl:px-72 text-md md:text-xl 2xl:text-4xl">
 				<div className="flex flex-col mt-8 mx-auto text-center gap-2 md:gap-12">
 					<p
 						className="mt-6"

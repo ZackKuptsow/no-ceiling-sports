@@ -2,6 +2,7 @@
 	"name": "no-ceiling-sports",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "https://ZackKuptsow.github.io/no-ceiling-sports",
 	"dependencies": {
 		"@alpinejs/intersect": "^3.10.4",
 		"@emailjs/browser": "^3.7.0",
@@ -19,6 +20,8 @@
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "react-dotenv && react-scripts start",
 		"build": "react-dotenv && react-scripts build",
 		"test": "react-dotenv && react-scripts test",
@@ -49,5 +52,8 @@
 			"SERVICE_ID",
 			"TEMPLATE_ID"
 		]
+	},
+	"devDependencies": {
+		"gh-pages": "^4.0.0"
 	}
 }

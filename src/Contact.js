@@ -9,8 +9,6 @@ const Contact = () => {
 	const TEMPLATE_ID = env.TEMPLATE_ID;
 	const PUBLIC_KEY = env.PUBLIC_KEY;
 
-	console.log(SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY);
-
 	const sendEmail = e => {
 		e.preventDefault();
 
@@ -28,9 +26,9 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="h-screen bg-light py-10 px-2  md:py-40 2xl:py-72"
+			className="flex h-screen bg-light py-10 px-2  md:py-40 2xl:py-72"
 		>
-			<div className="w-full md:w-1/4 flex flex-col justify-evenly md:mt-8 mx-2 md:mx-auto py-1 md:py-8 text-center gap-12 bg-grey-light border-4 border-dark rounded-2xl shadow-lg">
+			<div className="w-full md:w-1/4 flex flex-col justify-evenly m-auto py-1 md:py-8 text-center gap-12 bg-grey-light border-4 border-dark rounded-2xl shadow-lg">
 				<form
 					ref={form}
 					onSubmit={sendEmail}
