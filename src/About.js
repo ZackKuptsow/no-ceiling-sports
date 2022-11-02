@@ -2,14 +2,11 @@ const About = () => {
 	return (
 		<section
 			id="about_us"
-			className="py-16 px-4 sm:px-6 h-screen text-light bg-dark"
+			className="flex px-12 h-screen text-light bg-dark"
 		>
-			<div className="my-20 2xl:my-40 mx-auto md:px-36 2xl:px-72 text-md md:text-xl 2xl:text-4xl">
-				<div className="flex flex-col mt-8 mx-auto text-center gap-2 md:gap-12">
-					<p
-						className="mt-6"
-						x-intersect="$el.classList.add('animate-fadeInUp')"
-					>
+			<div className="justify-evenly m-auto text-md md:text-xl 2xl:text-4xl">
+				<div className="flex flex-col m-auto text-center gap-4 md:gap-12">
+					<p x-intersect="$el.classList.add('animate-fadeInUp')">
 						Our mission is to level the playing field for
 						international student-athletes, giving them the
 						necessary support to succeed outside the game. By

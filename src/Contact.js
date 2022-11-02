@@ -24,10 +24,7 @@ const Contact = () => {
 			);
 	};
 	return (
-		<section
-			id="contact"
-			className="flex h-screen bg-light py-10 px-2  md:py-40 2xl:py-72"
-		>
+		<section id="contact" className="flex h-screen bg-light px-12">
 			<div className="w-full md:w-1/4 flex flex-col justify-evenly m-auto py-1 md:py-8 text-center gap-12 bg-grey-light border-4 border-dark rounded-2xl shadow-lg">
 				<form
 					ref={form}
