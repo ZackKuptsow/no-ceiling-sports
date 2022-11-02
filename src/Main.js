@@ -15,7 +15,7 @@ const Main = () => {
 							SPORTS
 						</h1>
 						<p
-							className="items-center md:w-3/4 mt-10 md:mt-12 2xl:mt-40 md:ml-80 mx-auto md:mx-12 2xl:mx-0 text-center md:text-4xl drop-shadow-lg shadow-dark"
+							className="items-center md:w-3/4 mt-10 md:mt-12 2xl:mt-40 md:ml-80 mx-auto md:mx-12 2xl:mx-0 px-12 md:px-0 text-center text-2xl md:text-4xl drop-shadow-lg shadow-dark"
 							x-intersect="$el.classList.add('animate-[fadeInUp_1s_ease-in_1s_1_normal_backwards_running]')"
 						>
 							Positioned in a growing, $1 billion market in the
