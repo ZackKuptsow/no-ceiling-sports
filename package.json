@@ -2,7 +2,7 @@
 	"name": "no-ceiling-sports",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "http://noceilingsports.com",
+	"homepage": "www.noceilingsports.com/build",
 	"dependencies": {
 		"@alpinejs/intersect": "^3.10.4",
 		"@emailjs/browser": "^3.7.0",
