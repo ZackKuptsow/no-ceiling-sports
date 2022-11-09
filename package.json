@@ -2,7 +2,7 @@
 	"name": "no-ceiling-sports",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://ZackKuptsow.github.io/no-ceiling-sports",
+	"homepage": "http://noceilingsports.com",
 	"dependencies": {
 		"@alpinejs/intersect": "^3.10.4",
 		"@emailjs/browser": "^3.7.0",
