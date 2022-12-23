@@ -1,6 +1,9 @@
 name: CI
 
 on:
+  branch_protection_rule:
+    types: [created, deleted]
+
   push:
     branches:
       - master
