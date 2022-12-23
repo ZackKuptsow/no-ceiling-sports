@@ -6,7 +6,6 @@ const About = () => {
 		>
 			<div className="justify-evenly m-auto text-md md:text-xl 2xl:text-4xl">
 				<div className="flex flex-col m-auto text-center gap-4 md:gap-12">
-					<p>testing force rebuild - remove later</p>
 					<p x-intersect="$el.classList.add('animate-fadeInUp')">
 						Our mission is to level the playing field for
 						international student-athletes, giving them the
