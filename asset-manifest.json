@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/www.noceilingsports.com/static/css/main.5aeb5598.css",
-    "main.js": "/www.noceilingsports.com/static/js/main.dc4272cb.js",
-    "static/media/bw_ball.avif": "/www.noceilingsports.com/static/media/bw_ball.30fd9139346f424f5ee8.avif",
-    "index.html": "/www.noceilingsports.com/index.html",
-    "main.5aeb5598.css.map": "/www.noceilingsports.com/static/css/main.5aeb5598.css.map",
-    "main.dc4272cb.js.map": "/www.noceilingsports.com/static/js/main.dc4272cb.js.map"
+    "main.css": "/static/css/main.c52b6b64.css",
+    "main.js": "/static/js/main.dc4272cb.js",
+    "static/media/bw_ball.avif": "/static/media/bw_ball.30fd9139346f424f5ee8.avif",
+    "index.html": "/index.html",
+    "main.c52b6b64.css.map": "/static/css/main.c52b6b64.css.map",
+    "main.dc4272cb.js.map": "/static/js/main.dc4272cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.5aeb5598.css",
+    "static/css/main.c52b6b64.css",
     "static/js/main.dc4272cb.js"
   ]
 }
