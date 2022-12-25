@@ -1,11 +1,13 @@
 name: CI
 
 on:
+  label:
+    types: [created, edited]
+
   push:
     branches:
       - master
-  
-  # Allows you to run this workflow manually from the Actions tab
+
   workflow_dispatch:
 
 jobs:
@@ -14,7 +16,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
     - name: Checkout
       uses: actions/checkout@v1
 
@@ -26,7 +27,7 @@ jobs:
         PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
         SERVICE_ID: ${{ secrets.SERVICE_ID }}
         TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
-    
+
     - name: Deploy
       uses: ZackKuptsow/github-pages-deploy
       with:
