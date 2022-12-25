@@ -1,10 +1,13 @@
 name: CI
 
 on:
+  push:
+  pull_request:
+    branches:
+      - '*'
+  
   label:
     types: [created, edited]
-
-  push:
 
   workflow_dispatch:
 
