@@ -5,16 +5,20 @@ on:
   pull_request:
     branches:
       - '*'
-  
+
   label:
     types: [created, edited]
 
   workflow_dispatch:
 
 jobs:
-  build:
-
+  build_and_deploy:
     runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      pages: write
+      contents: write
 
     steps:
     - name: Checkout
@@ -22,7 +26,7 @@ jobs:
 
     - name: Build
       run: |
-        npm install
+        npm ci
         npm run-script build
       env:
         PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
@@ -30,7 +34,7 @@ jobs:
         TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
 
     - name: Deploy
-      uses: ZackKuptsow/github-pages-deploy
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
