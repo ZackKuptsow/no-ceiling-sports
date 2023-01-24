@@ -29,9 +29,9 @@ jobs:
         npm ci
         npm run-script build
       env:
-        PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
-        SERVICE_ID: ${{ secrets.SERVICE_ID }}
-        TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
+        REACT_APP_PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
+        REACT_APP_SERVICE_ID: ${{ secrets.SERVICE_ID }}
+        REACT_APP_TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
