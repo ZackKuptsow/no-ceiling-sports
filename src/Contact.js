@@ -13,7 +13,12 @@ const Contact = () => {
 		e.preventDefault();
 
 		emailjs
-			.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+			.sendForm(
+				REACT_APP_SERVICE_ID,
+				REACT_APP_TEMPLATE_ID,
+				form.current,
+				REACT_APP_PUBLIC_KEY
+			)
 			.then(
 				result => {
 					console.log(result.text);
