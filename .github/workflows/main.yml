@@ -33,6 +33,15 @@ jobs:
         REACT_APP_SERVICE_ID: ${{ secrets.REACT_APP_SERVICE_ID }}
         REACT_APP_TEMPLATE_ID: ${{ secrets.REACT_APP_TEMPLATE_ID }}
 
+    - name: Store Variables
+      run: |
+        mkdir app
+        cd app
+        touch .env
+        echo 'REACT_APP_PUBLIC_KEY=${{ secrets.REACT_APP_PUBLIC_KEY }}' >> .env
+        echo 'REACT_APP_SERVICE_ID=${{ secrets.REACT_APP_SERVICE_ID }}' >> .env
+        echo 'REACT_APP_TEMPLATE_ID=${{ secrets.REACT_APP_TEMPLATE_ID }}' >> .env
+
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
