@@ -19,9 +19,11 @@ const Main = () => {
 							x-intersect="$el.classList.add('animate-[fadeInUp_1s_ease-in_1s_1_normal_backwards_running]')"
 						>
 							Positioned in a growing, $1 billion market in the
-							sports industry, NoCeiling Sports is a full-service
-							marketing agency whose focus is on building the
-							personal brands of international student-athletes.{' '}
+							sports industry,{' '}
+							<span className="text-red-light">No</span>Ceiling
+							Sports is a full-service marketing agency whose
+							focus is on building the personal brands of
+							international student-athletes.{' '}
 						</p>
 					</div>
 				</div>

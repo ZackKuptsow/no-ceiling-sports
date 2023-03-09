@@ -21,7 +21,7 @@ module.exports = {
 				fadeInUp: 'fadeInUp 1s ease-in 0s 1'
 			},
 			fontFamily: {
-				signika: ['Signika', 'sans-serif']
+				glook: ['Glook', 'sans-serif']
 			},
 			keyframes: {
 				fadeInUp: {

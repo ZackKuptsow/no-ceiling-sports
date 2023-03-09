@@ -5,11 +5,8 @@ import './style.css';
 
 function App() {
 	return (
-		<div
-			className="antialiased App font-signika font-weight-700 z-40"
-			x-data
-		>
-			<header className="mx-auto px-2 py-4 sm:p-6 text-light bg-dark sticky top-0 z-10">
+		<div className="antialiased App font-glook z-40" x-data>
+			<header className="mx-auto px-2 py-4 sm:p-6 text-dark bg-grey-light sticky top-0 z-10">
 				<div className="flex justify-around md:mr-12 px-12">
 					<nav className="flex justify-start items-center w-full">
 						<a href="#home" className="text-3xl">

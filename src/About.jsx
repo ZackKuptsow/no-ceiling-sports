@@ -2,7 +2,7 @@ const About = () => {
 	return (
 		<section
 			id="about_us"
-			className="flex px-12 h-screen text-light bg-dark"
+			className="flex px-12 h-screen text-dark bg-grey-light"
 		>
 			<div className="justify-evenly m-auto text-md md:text-xl 2xl:text-4xl">
 				<div className="flex flex-col m-auto text-center gap-4 md:gap-12">
