@@ -50,7 +50,9 @@
 		"whitelist": [
 			"REACT_APP_PUBLIC_KEY",
 			"REACT_APP_SERVICE_ID",
-			"REACT_APP_TEMPLATE_ID"
+			"REACT_APP_TEMPLATE_ID",
+			"127.0.0.1",
+			"noceilingsports.com"
 		]
 	},
 	"devDependencies": {
