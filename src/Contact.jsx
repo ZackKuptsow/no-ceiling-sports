@@ -1,17 +1,17 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-// import env from 'react-dotenv';
+import env from 'react-dotenv';
 
 const Contact = () => {
 	const form = useRef();
 
-	// const REACT_APP_SERVICE_ID = env?.REACT_APP_SERVICE_ID;
-	// const REACT_APP_TEMPLATE_ID = env?.REACT_APP_TEMPLATE_ID;
-	// const REACT_APP_PUBLIC_KEY = env?.REACT_APP_PUBLIC_KEY;
+	const REACT_APP_SERVICE_ID = env?.REACT_APP_SERVICE_ID;
+	const REACT_APP_TEMPLATE_ID = env?.REACT_APP_TEMPLATE_ID;
+	const REACT_APP_PUBLIC_KEY = env?.REACT_APP_PUBLIC_KEY;
 
-	const REACT_APP_SERVICE_ID = 'tnZo9UDLelM_vVGJM';
-	const REACT_APP_TEMPLATE_ID = 'service_cmv4hbk';
-	const REACT_APP_PUBLIC_KEY = 'template_ii1e9za';
+	// const REACT_APP_SERVICE_ID = 'tnZo9UDLelM_vVGJM';
+	// const REACT_APP_TEMPLATE_ID = 'service_cmv4hbk';
+	// const REACT_APP_PUBLIC_KEY = 'template_ii1e9za';
 
 	const sendEmail = e => {
 		e.preventDefault();
@@ -69,11 +69,13 @@ const Contact = () => {
 						name="message"
 						className="px-4 py-2 resize text-sm text-dark bg-grey-light border border-dark rounded shadow-lg focus:outline-red-light"
 					/>
-					<input
+					<button
 						type="submit"
 						value="Send"
 						className="px-2 py-1 bg-dark text-light border-1 border-light rounded-lg"
-					/>
+					>
+						Send
+					</button>
 				</form>
 			</div>
 		</section>
